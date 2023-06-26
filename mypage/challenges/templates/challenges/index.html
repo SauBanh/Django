@@ -2,6 +2,7 @@
 {% load static %}
 {% block css_files %}
     <link rel="stylesheet" href="{% static "challenges/challenges.css" %}">
+    <link rel="stylesheet" href="{% static "challenges/includes/header.css" %}">
 {% endblock %}
 {% block page_title %}
     All Challenge
@@ -13,5 +14,5 @@
             {% comment %} <li><a href="/challenges/{{month}}">{{month|title}}</a></li> {% endcomment %}
             <li><a href="{% url "month-challenge" month %}">{{month|title}}</a></li>
         {% endfor %}
-    <ul>
+    </ul>
 {% endblock %}
